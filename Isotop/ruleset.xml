@@ -121,5 +121,8 @@
 
     <!-- Exclude assignment in condition. -->
     <exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found" />
+    
+    <!-- Exclude assignments in control structure -->
+    <exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure" />
   </rule>
 </ruleset>
