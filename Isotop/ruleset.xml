@@ -20,7 +20,13 @@
 
     <!-- Demanding space in array declaration is stupid. -->
     <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions" />
-    <exclude name="WordPress.Arrays.ArrayDeclaration" />
+
+    <!-- Demanding array syntax is stupid. -->
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
+    <exclude name="Generic.Arrays.DisallowLongArraySyntax.Found" />
+
+    <!-- Allow date function. -->
+    <exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
 
     <!-- Demanding after opening control structure -->
     <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterStructureOpen" />
@@ -106,6 +112,7 @@
 
     <!-- Comment should not be required in param. -->
     <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
+    <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag" />
 
     <!-- Exclude scalar type hint since it's bugging. -->
     <exclude name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing" />
